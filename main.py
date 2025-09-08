@@ -16,5 +16,13 @@ print(f'nama ku {nama_andi} dan umurku adalah {umur} dan berada di kelas {kelas}
 
 start = input("Ada seorang komputer jahat menghampirii mu. Lawan dengan permainan SUIT!!!! (Lawan/Kabur)")
 if start == "Lawan":
-    
+    act = input("Serang dengan... (Batu/Gunting/Kertas)")
+    poss = ["Batu", "Gunting", "Kertas"]
+    kom = random.choice(poss)
+    print(f'Kamu menyerang dengan {act} lalu dia menyerang dengan {kom}')
+    if act == kom:
+        print("Kalian seri!")
+    elif act == ("Batu"):
+        if kom == ("Gunting"):
+            print("")
 elif start == "Kabur":
